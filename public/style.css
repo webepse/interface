@@ -13,7 +13,6 @@
   width: 100%;
   display: grid;
   gap: 15px;
-  outline: 1px solid blue;
 }
 
 .cards {
@@ -21,7 +20,6 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #7327c0;
-  outline: 2px solid lawngreen;
 }
 .cards img {
   width: 100%;
@@ -109,6 +107,9 @@ header a:hover {
 
 /* MEDIA */
 @media all and (max-width: 768px) {
+  #flex {
+    padding: 30px 0;
+  }
   #row-one, #row-two {
     grid-template-columns: 1fr;
   }

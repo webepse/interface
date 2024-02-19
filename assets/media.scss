@@ -1,5 +1,8 @@
 @media all and (max-width: 768px)
 {
+    #flex{
+        padding: 30px 0;
+    }
     #row-one, #row-two{
         grid-template-columns: 1fr;
     }

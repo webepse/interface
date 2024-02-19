@@ -2,14 +2,12 @@
     width: 100%;
     display: grid;
     gap: 15px;
-    outline: 1px solid blue;
 }
 .cards{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: $main-dark;
-    outline: 2px solid lawngreen;
     img{
         width: 100%;
         height: 250px;
