@@ -1,0 +1,41 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* NORMALIZE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PALETTE */
+$border: #26fec9;
+$accent: #FF3680;
+$main: #9a34f9;
+$main-rgba: rgba(154,52,249,255);
+$main-dark: #7327c0;
+
+/* GRID */
+@import "grid.scss";
+/*@import "test-grid.scss";*/
+
+/* MENU */
+@import "header.scss";
+
+/* GENERAL */
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $main;
+    font-size: 1em;
+}
+h2{
+    font-size: 1.2em;
+    padding: 10px;
+    text-transform: uppercase;
+    color: $border;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,54 @@
+#flex{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+}
+.section{
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    outline: 1px solid blue;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $main-dark;
+    outline: 2px solid lawngreen;
+    img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: bottom ;
+    }
+}
+#row-one{
+    grid-template-columns: 2.8fr 2.8fr 2.8fr 3.6fr;
+    .cards{
+        min-height: 300px;
+    }
+}
+#row-two{
+    grid-template-columns: repeat(4, 1fr);
+    .cards{
+        width: 100%;
+        min-height: 150px;
+    }
+    img{
+        width: auto;
+        max-height: 150px;
+    }
+}
+.icons{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    img{
+        width: auto;
+        height: 50px;
+        object-fit: cover;
+    }
+}
