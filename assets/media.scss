@@ -1,0 +1,12 @@
+@media all and (max-width: 768px)
+{
+    #row-one, #row-two{
+        grid-template-columns: 1fr;
+    }
+    nav{
+        display: none;
+    }
+    #burger{
+        display: block;
+    }
+}

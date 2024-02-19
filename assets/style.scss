@@ -12,15 +12,28 @@
 $border: #26fec9;
 $accent: #FF3680;
 $main: #9a34f9;
-$main-rgba: rgba(154,52,249,255);
+$main-rgba: rgba(154,52,249,255,);
 $main-dark: #7327c0;
 
 /* GRID */
 @import "grid.scss";
 /*@import "test-grid.scss";*/
-
 /* MENU */
 @import "header.scss";
+/* MEDIA */
+@import "media.scss";
+
+@keyframes bgcolor{
+    0%{
+        background-color: $main;
+    }
+    50%{
+        background-color: $accent;
+    }
+    100%{
+        background-color: $main;
+    }
+}
 
 /* GENERAL */
 body{
@@ -28,6 +41,9 @@ body{
     min-height: 100vh;
     background-color: $main;
     font-size: 1em;
+    animation-name: bgcolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 h2{
     font-size: 1.2em;
@@ -38,4 +54,12 @@ h2{
 .wrapper{
     width: 80%;
     margin: 0 auto;
+}
+#flex{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
 }

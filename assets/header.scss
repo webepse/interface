@@ -1,5 +1,5 @@
 header{
-    width: 70%;
+    width: 100%;
      nav{
          width: 75%;
          height: 30px;
@@ -28,4 +28,16 @@ header{
              box-shadow: inset 0 -5px 0 $accent;
          }
      }
+ }
+ #burger{
+    width: 30px;
+    display: none;
+    align-self: center;
+    cursor: pointer;
+    .bar{
+        width: 100%;
+        height: 5px;
+        background-color: $main-dark;
+        margin: 8px 0;
+    }
  }
